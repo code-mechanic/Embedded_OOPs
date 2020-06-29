@@ -1,7 +1,7 @@
 # Embedded_OOPs
 Here Object oriented concepts are implemented in various Peripherals
 
-##Snake game details
+## Snake game details
 Beginning of the Game
 ![](Snake.X/pic1.jpg)
 
