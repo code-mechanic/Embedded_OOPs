@@ -15,8 +15,6 @@ char Handle_debounce(char state);
 char pressed = 0;
 
 int main(void) {
-  MCU_INTERRUPT_ENABLE();
-  EXTERNAL_INTERRUPT_config();
   //char Pinstate = 0;
   GPIO_PinDirection(P_B0, as_INPUT);
   GPIO_PinDirection(P_B1, as_OUTPUT);
@@ -58,11 +56,6 @@ int main(void) {
   }
 }
 
-ISR(INT0_vect)
-{
-  _delay_ms(30);
-  pressed++;
-}
 char Handle_debounce(char state)
 {
   static char current_state;
